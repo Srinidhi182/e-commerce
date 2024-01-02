@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "../styles/Cart.css";
 const Cart = ({ Cart, setCart, handleChange }) => {
   const [price, setPrice] = useState(0);
 
@@ -27,11 +27,11 @@ const Cart = ({ Cart, setCart, handleChange }) => {
             <img src={item.img} alt="" />
             <p>{item.title}</p>
           </div>
-          <div>
-            <button onClick={() => handleChange(item, 1)}>+</button>
+          {/* <div>
+            <button onClick={() => handleChange(item, -1)}>-</button>
             <button>{item.amount}</button>
-            <button onClick={() => handleChange(item, -1)}>+</button>
-          </div>
+            <button onClick={() => handleChange(item, 1)}>+</button>
+          </div> */}
           <div>
             <span>{item.price}</span>
             <button onClick={() => handleRemove(item.id)}>Remove</button>
@@ -41,17 +41,15 @@ const Cart = ({ Cart, setCart, handleChange }) => {
       <div className="total">
         <h2>Cart</h2>
         <ul>
-          {this.props.cart.map((product, index) => (
+          {Cart.map((product, index) => (
             <li key={index}>
               {product.name}-{product.price}
             </li>
           ))}
         </ul>
         <p>
-          Total:{" "}
-          {this.props.cart.reduce((total, product) => total + product.price, 0)}
+          Total: {Cart.reduce((total, product) => total + product.price, 0)}
         </p>
-        <button onClick={this.props.removeProducts}>Checkout</button>
         <button
           onClick={() => {
             setCart([]);
