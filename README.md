@@ -1,7 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-https://vercel.com/srinidhis-projects-85e96ee3/e-commerce - You can view the prject here
+
+ You can view the prject here - https://e-commerce-liart-six.vercel.app/
 ## Available Scripts
 
 In the project directory, you can run:
