@@ -35,7 +35,7 @@ article {
   margin-right: 10px;
   justify-content: space-between;
 }
-.cart_box div:nth-child(3) button {
+.cart_box div:nth-child(2) button {
   padding: 5px 10px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -47,11 +47,11 @@ article {
   cursor: pointer;
   justify-content: space-between;
 }
-.cart_box div:nth-child(3) button:hover {
-  background-color: darkseagreen;
+.cart_box div:nth-child(2) button:hover {
+  background-color: darkcyan;
 }
-.cart_box div:nth-child(3)span {
-  background-color: lightgreen;
+.cart_box div:nth-child(2) span {
+  background-color: goldenrod;
   padding: 5px 10px;
   border-radius: 5px;
   margin-right: 10px;
@@ -60,15 +60,33 @@ article {
   display: flex;
   justify-content: space-between;
 }
-.total span:nth-child(1) {
-  font-size: 2rem;
+.total h2 {
+  font-size: 1.5rem;
   color: skyblue;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-.total span:nth-child(2) {
-  font-size: 2rem;
+.total p {
+  font-size: 1.5rem;
   color: green;
   font-weight: bold;
+}
+
+.total button {
+  padding: 5px 8px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: skyblue;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.total button:hover {
+  background-color: darkcyan;
 }

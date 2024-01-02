@@ -40,13 +40,13 @@ const Cart = ({ Cart, setCart, handleChange }) => {
       ))}
       <div className="total">
         <h2>Cart</h2>
-        <ul>
+        {/* <ul>
           {Cart.map((product, index) => (
             <li key={index}>
               {product.name}-{product.price}
             </li>
           ))}
-        </ul>
+        </ul> */}
         <p>
           Total: {Cart.reduce((total, product) => total + product.price, 0)}
         </p>
