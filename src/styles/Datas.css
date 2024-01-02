@@ -3,9 +3,9 @@
   padding: 0;
 }
 section {
-  width: 80%;
+  width: 100%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 4%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
@@ -13,6 +13,7 @@ section {
 .cards {
   width: 250px;
   padding: 20px;
+  height: 300px;
 }
 .cards:hover {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -20,27 +21,37 @@ section {
 }
 .image_box img {
   width: 150px;
-  height: 400px;
+  height: 250px;
 }
 .image_box img {
-  width: 150px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
 }
 .details p:nth-child(1) {
   font-weight: bold;
+  margin-top: 1px;
+  align-items: center;
+  margin-left: 5rem;
 }
 .details p:nth-child(2) {
   color: grey;
   font-size: 0.8rem;
+  align-items: center;
+  margin-left: 3rem;
 }
 .details p:nth-child(3) {
   font-weight: bold;
   color: grey;
+  align-items: center;
+  margin-left: 3.5rem;
 }
-.detaials button {
+.details button {
   padding: 5px 10px;
   border: none;
   font-weight: bold;
   background-color: skyblue;
   outline: none;
+  align-items: center;
+  margin-left: 3.5rem;
+  margin-top: 2px;
 }

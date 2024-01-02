@@ -8,12 +8,12 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   const handleClick = (item) => {
-    if (cart.indexof(item) !== -1) return;
+    if (cart.indexOf(item) !== -1) return;
     setCart([...cart, item]);
   };
 
   const handleChange = (item, d) => {
-    const ind = cart.indexof(item);
+    const ind = cart.indexOf(item);
     const arr = cart;
     arr[ind].amount += d;
 
@@ -27,7 +27,7 @@ const App = () => {
       {show ? (
         <Datas handleClick={handleClick} />
       ) : (
-        <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+        <Cart Cart={cart} setCart={setCart} handleChange={handleChange} />
       )}
       <Datas />
     </React.Fragment>

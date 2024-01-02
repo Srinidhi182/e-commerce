@@ -39,6 +39,24 @@ const Cart = ({ Cart, setCart, handleChange }) => {
         </div>
       ))}
       <div className="total">
+        {/*
+            <h2>Cart</h2>
+            <ul>
+              {this.props.cart.map((product, index) => (
+                <li key={index}>
+                  {product.name}-{product.price}
+                </li>
+              ))}
+            </ul>
+            <p>
+              Total:{" "}
+              {this.props.cart.reduce(
+                (total, product) => total + product.price,
+                0
+              )}
+            </p>
+            <button onClick={this.props.removeProducts}>Checkout</button>
+         */}
         <span>Total price : </span>
         <span> Rs - {price} </span>
       </div>
