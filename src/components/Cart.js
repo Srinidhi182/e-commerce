@@ -51,14 +51,14 @@ const Cart = ({ Cart, setCart, handleChange }) => {
           Total:{" "}
           {this.props.cart.reduce((total, product) => total + product.price, 0)}
         </p>
+        <button onClick={this.props.removeProducts}>Checkout</button>
         <button
           onClick={() => {
             setCart([]);
           }}
         >
-          Checkout
+          Pay
         </button>
-
         {/* <span>Total price : </span>
         <span> Rs - {price} </span> */}
       </div>
