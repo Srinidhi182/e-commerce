@@ -18,7 +18,6 @@ const App = () => {
     arr[ind].amount += d;
 
     if (arr[ind].amount === 0) arr[ind].amount = 1;
-    setCart([...arr]);
   };
 
   return (
@@ -29,7 +28,6 @@ const App = () => {
       ) : (
         <Cart Cart={cart} setCart={setCart} handleChange={handleChange} />
       )}
-      <Datas />
     </React.Fragment>
   );
 };

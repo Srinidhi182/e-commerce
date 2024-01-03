@@ -57,6 +57,8 @@ const Cart = ({ Cart, setCart, handleChange }) => {
         >
           Pay
         </button>
+        {/* buying the button, map the objects which   */}
+
         {/* <span>Total price : </span>
         <span> Rs - {price} </span> */}
       </div>
