@@ -29,7 +29,6 @@ const App = () => {
       ) : (
         <Cart Cart={cart} setCart={setCart} handleChange={handleChange} />
       )}
-      <Datas />
     </React.Fragment>
   );
 };
