@@ -5,7 +5,6 @@ const list = [
     price: 100,
     img: "img/pic1.jpg",
     amount: 1,
-    sold: false,
   },
   {
     id: 2,

@@ -1,5 +1,5 @@
 import React from "react";
-// import img from "../img/imageindex";
+
 const Card = ({ item, handleClick }) => {
   const { title, author, price, img } = item;
   return (
