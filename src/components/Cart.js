@@ -50,13 +50,17 @@ const Cart = ({ Cart, setCart, handleChange }) => {
         <p>
           Total: {Cart.reduce((total, product) => total + product.price, 0)}
         </p>
+
         <button
           onClick={() => {
-            setCart([]);
+            handleChange(Cart);
           }}
         >
           Pay
         </button>
+
+        {/* buying the button, map the objects which   */}
+
         {/* <span>Total price : </span>
         <span> Rs - {price} </span> */}
       </div>
